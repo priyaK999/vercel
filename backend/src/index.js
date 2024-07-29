@@ -77,7 +77,7 @@ app.post('/contact-us', async (req, res) => {
     );
 
     await nodemamailSender(
-      'priyakumari2002002@gmail.com',
+      'centennialinfotech@gmail.com',
       'New Contact Us Message',
       collaborationInvitationTemplate(name, email, query, phone)
     );
