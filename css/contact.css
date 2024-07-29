@@ -1,0 +1,327 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact-main {
+    width: 100%;
+}
+
+.c-head {
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 83.2px;
+    text-align: center;
+}
+
+.c-subhead {
+    text-align: center;
+    color: white;
+    padding-top: 15px;
+    margin: 0;
+    padding-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact-submain {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    gap: 40px;
+    max-width: 70%;
+    margin-top: 30px;
+}
+
+.contact-left {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.contact-left img {
+    width: 100%;
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.cl-num {
+    padding-top: 25px;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-icon {
+    font-size: 20px; 
+    color: #1177BD; 
+    margin-right: 10px; 
+}
+
+
+.contact-right {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.cr-head {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.41px;
+    text-align: left;
+    color: #0DA69C;
+    text-transform: uppercase;
+}
+
+.cr-subhead {
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif; 
+}
+
+
+.cr-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.cr-input input {
+    flex: 1;
+    margin-right: 10px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 100px; 
+    margin-bottom: 20px;
+}
+
+.cr-input input:last-child {
+    margin-right: 0;
+}
+
+.cr-email {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 100px; 
+    margin-bottom: 20px;
+}
+
+.cr-query {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 100px; 
+    margin-bottom: 30px;
+}
+
+.cr-button {
+    padding: 10px 20px;
+    background-color: #1177BD;
+    color: #fff;
+    border: none;
+    border-radius: 120px; 
+    cursor: pointer;
+}
+
+.cr-button:hover {
+    background-color: #13669e;
+}
+
+.contact-up {
+    width: 100%;
+    height: 200px;
+    top: 122px;
+    left: 0;
+    gap: 0px;
+    opacity: 0.69;
+    background: linear-gradient(90deg, #004770 0%, #1177BD 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.map-container {
+    margin-top: 20px;
+}
+
+/* map */
+
+
+.map-head {
+    padding: 40px;
+    width: 100%;
+    background-color: #004770; /* Solid background color */
+    color: white; /* Text color for readability */
+    position: relative;
+    z-index: 10; /* Ensure content is above background */
+    margin: 0 auto; /* Centering the container horizontally */
+    box-sizing: border-box; /* Ensure padding doesn't affect the width */
+    overflow-x: hidden;
+}
+
+.map-email {
+    background-color: #004770; /* Background color of input */
+    padding: 10px;
+    padding-right: 40px;
+    border: 1px solid white; /* White border color */
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.map-email::placeholder {
+    color: white; /* White placeholder text color */
+}
+
+.map-h1, .map-subhead {
+    position: relative; /* Ensure text is above background */
+    z-index: 2; /* Ensure text is above background */
+}
+
+.map-h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.map-subhead {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.map-input-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between input and button */
+}
+
+.map-btn {
+    padding: 10px 30px;
+    background-color: white; /* Button background color */
+    color: #1177BD; /* Button text color */
+    border: none;
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.map-btn:hover {
+    background-color: #0a5d91; /* Darker background on hover */
+}
+
+
+
+/* Media Queries */
+
+/* Mobile screens */
+@media (max-width: 767px) {
+    .contact-up {
+        padding: 20px 10px;
+    }
+
+    .c-head {
+        font-size: 3rem; /* Adjust for smaller screens */
+    }
+
+    .c-subhead {
+        font-size: 1rem; /* Adjust for smaller screens */
+    }
+
+    .contact-submain {
+        flex-direction: column;
+        gap: 20px; /* Reduced gap for smaller screens */
+        padding: 0 10px; /* Padding for mobile screens */
+    }
+
+    .contact-left, .contact-right {
+        width: 100%;
+        padding: 0;
+    }
+
+    .contact-left img {
+        max-width: 150px; /* Adjust image size */
+    }
+
+    .cr-input {
+        flex-direction: column;
+    }
+
+    .cr-input input {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .map-container {
+        width: 100%; /* Full width for mobile screens */
+        height: 300px; /* Adjust height for mobile screens */
+    }
+
+    .map-head {
+        padding: 20px;
+    }
+
+    .map-h1 {
+        font-size: 1.2rem;
+    }
+
+    .map-subhead {
+        font-size: 0.9rem;
+    }
+
+    .map-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .map-btn {
+        font-size: 0.9rem;
+    }
+}
+
+/* Tablet screens and up */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .contact-submain {
+        flex-direction: column;
+        gap: 30px; /* Adjusted gap for tablet screens */
+    }
+
+    .contact-left {
+        padding-right: 20px;
+    }
+
+    .contact-right {
+        padding-left: 20px;
+    }
+
+    .cr-input {
+        flex-direction: row;
+    }
+
+    .cr-input input {
+        margin-right: 10px;
+        margin-bottom: 0; /* Remove bottom margin in row direction */
+    }
+
+    .map-container {
+        width: 100%; /* Full width for tablets */
+        height: 400px; /* Adjust height for tablets */
+    }
+}
+

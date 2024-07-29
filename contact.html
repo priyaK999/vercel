@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Centennial InfoTech</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Innovative solutions for modern problems. Join Centennial Infotech to experience cutting-edge technology and unparalleled service.">
+  <meta name="keywords"
+    content="technology, innovation, startup, Centennial Infotech, solutions, modern problems, tech services">
+  <meta name="author" content="Centennial Infotech">
+  <meta property="og:title" content="Centennial Infotech - Innovative Solutions">
+  <meta property="og:description"
+    content="Join Centennial Infotech to experience cutting-edge technology and unparalleled service.">
+  <meta property="og:image" content="https://example.com/path/to/logo.png">
+  <meta property="og:url" content="https://centennialinfotech.com">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Centennial Infotech - Innovative Solutions">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="icon" sizes="180x180" type="image/x-icon" href="img/favicon.png">
+  <!-- google fonts-->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <!-- font awesome link-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+  <!-- bootstrap Stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <!-- Owl Stylesheets -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+  <!-- javascript -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/owl.carousel.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/product.js"></script>
+  <!-- css-->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- toast -->
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+<!-- words -->
+<script src="https://cdn.jsdelivr.net/npm/bad-words@3.0.0/dist/bad-words.min.js"></script>
+
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/css/intlTelInput.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/js/intlTelInput.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/css/intlTelInput.css">
+
+
+<style>
+.input-group > .intl-tel-input.allow-dropdown {
+-webkit-box-flex: 1;
+-ms-flex: 1 1 auto;
+flex: 1 1 auto;
+width: 1%;
+}
+
+.intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-3 .selected-flag {
+  width: 78px;
+  height: 42px;
+}
+
+.intl-tel-input.separate-dial-code .selected-flag {
+  background-color: rgba(0, 0, 0, 0.05);
+  display: table;
+  border-radius: 15px 0px 0px 15px;
+}
+
+.input-group > .intl-tel-input.allow-dropdown > .flag-container {
+  z-index: 4;
+}
+
+.iti-flag {
+background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/img/flags.png");
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .iti-flag {
+    background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/img/flags@2x.png");
+  }
+}
+.intl-tel-input .country-list {
+width: 300px;
+
+overflow-x: hidden;
+}
+
+</style>
+
+<style>
+    .subscribe-message { 
+        color: red;
+    }
+    .subscribe-message.success {
+        color: green; 
+    }
+</style>
+
+
+
+<style>
+
+.contact-left {
+    flex: 1;
+    padding-right: 20px;
+    float: left;
+}
+.contact-left img {
+    width: 100%;
+    max-width: 20rem;
+    display: block;
+    margin: 0 auto;
+}
+.contact-submain {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    gap: 40px;
+    max-width: 100%;
+    margin-top: 30px;
+}
+.map-email {
+    margin-right: 20px;
+}
+.contact-submain {
+    margin-top: 72px;
+    margin-bottom: 72px;
+}
+.map iframe {
+    width: 100%;
+}
+.map-btn:hover {
+    color:#fff;
+}
+.section-footer {
+    width: 100%;
+}
+.map-email {
+    max-width: 53%;
+}
+
+        /* Toast Container */
+        .toast-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        /* Toast Style */
+        .toast {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            display: none;
+        }
+
+        .toast.show {
+            display: block;
+            animation: fadeInOut 4s;
+        }
+
+        @keyframes fadeInOut {
+            0% { opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- top Header-->
+<div class="top-header"></div>
+<!-- Header-->
+<nav class="navbar navbar-expand-sm navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><img src="img/logo.png" /></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Solutions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blogs.html">Blogs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Clients</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutus.html">About Us</a>
+        </li>
+
+        <div class="button">
+         <a class="btn btn-link" href="contact.html">Contact</a>
+        </div>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+     <!-- service bg  -->
+     <section class="breadcrumb-wrapper hero-page overflow-hidden bg-cover bg-blue">
+        <div class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="breadcrumb-content">
+                            <div class="breadcrumb__link">
+                                <ul>
+                                    <li><a href="index.html">Home </a></li>
+                                    <li>contact Us</li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <h2 class="title  ">contact Us</h2>
+                        <p>Here's a list to help you along your way</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ <!-- contact-submain  -->
+        <div class="contact-submain">
+            <div class="container">
+                <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-5 col-xl-5 col-xxl-5">
+            <div class="contact-left">
+                <div>
+                    <img src="img/contact.png">
+                </div>
+                <div class="cl-num">
+                    <div class="contact-info">
+                        <i class="fas fa-phone contact-icon"></i>
+                        <p>+91-081465 11568</p>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-envelope contact-icon"></i>
+                        <p>pankaj@centennialinfotech.com</p>
+                    </div>
+                </div>                               
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-8 col-lg-7 col-xl-7 col-xxl-7">
+            <div class="contact-right">
+                <form id="contactForm">
+                    <h6 class="small-text">Contact with me</h6>
+                    <h3 class="main-heading pb-2">Get in Touch</h3>
+                    
+                    <div class="cr-input">
+                        <input name="name" placeholder="Your Name" class="cr-name" id="name" required>
+                        <input id="mobile" name="phone" placeholder="XXXXXXXXXX" class="number" id="mobile" required> 
+                    </div>
+                    <input name="email" placeholder="Email Address" class="cr-email" id="email" required>
+                    <textarea name="query" placeholder="Drop your query here" class="cr-query" id="query" required></textarea>
+
+                    <!-- reCAPTCHA Widget -->
+                    <div class="g-recaptcha" data-sitekey="6LceVxcqAAAAAF_gPRPoijZWJ1NUrg2MRu3nlcJI"></div>
+                    <button type="submit" class="cr-button">Send</button>
+                </form>
+                <div id="code"></div>
+                <div id="mobile-number"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>   
+
+<!-- map  -->
+
+        <div class="map" >
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.2824667172076!2d76.70077217455241!3d30.710458574595016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fef93454505e9%3A0x5356b7839426918d!2sCentennial%20Infotech!5e0!3m2!1sen!2sin!4v1721139251471!5m2!1sen!2sin" width="1260" height="450" style="border:0; overflow-x: hidden;margin-bottom:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map-container"></iframe>
+        </div>
+        
+
+        <!-- sign up -->
+
+        <div class="map-head">
+            <div class="container">
+                <h1 class="map-h1">Sign up for our newsletter to get updated information, news, insights, or promotions</h1>
+                <p class="map-subhead">Break down language barriers to learning and gain new skills with</p>
+                <div class="map-form">
+                    <input id="newsletterEmail" placeholder="Email Address" class="map-email">
+                    <button id="subscribeButton" class="map-btn">Join Now</button>
+                    <p id="subscribeMessage" class="subscribe-message"></p> 
+                </div>
+            </div>
+        </div>
+         
+    </div>
+    
+    <!-- Toast Container -->
+    <div id="toastContainer" class="toast-container"></div>
+ <!-- footer section-->
+ <div class="footer pt-72 pb-72">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                <div class="footer-logo">
+                    <a href="#"> <img src="img/logo.png"></a>
+                </div>
+                <div class="icons_footer">
+                    <ul>
+
+                        <li><a href="#"> <img src="img/twitter.png"></a></li>
+                        <li><a href="#"><img src="img/facebook.png"></a></li>
+                        <li><a href="#"> <img src="img/youtube.png"></a></li>
+                        <li><a href="#"> <img src="img/instagram.png"></a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="col-sm-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                <div class="section-footer">
+                    <ul>
+                        <b><a href="#">Company</a></b>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">We’re Hiring</a></li>
+                        <li><a href="#">Investors</a></li>
+                        <li><a href="#">Contact</a></li>
+
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                <div class="section-footer">
+                    <div class="section-footer">
+                        <ul>
+                            <b><a href="#">solutions</a></b>
+                            <li><a href="#">Customer Lead Generation</a></li>
+                            <li><a href="#">Customer Retention Boost</a></li>
+                            <li><a href="#">Reputation Manageent</a></li>
+                            <li><a href="#">Marketing Automation</a></li>
+                            <li><a href="#">PartnerUp Network</a></li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                <div class="section-footer">
+                    <ul>
+                        <b><a href="#">Resources</a></b>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">
+                                <Videos href="#">Videos
+                            </a></li>
+                        <li><a href="#">
+                                <Case href="#">Case Studies
+                            </a></li>
+                        <li><a href="#">
+                                <Marketplace href="#">Marketplace
+                            </a></li>
+                        <li><a href="#">
+                                <Industries href="#">Industries
+                            </a></li>
+
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                <div class="section-footer">
+                    <ul>
+                        <b><a href="#">help</a></b>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Knowledge Base</a></li>
+                        <li><a href="#">Live Chat</a></li>
+
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script id="rendered-js">
+    $(function () {
+        var code = "+91"; // Assigning value from model.
+        $('#mobile').val(code);
+        $('#mobile').intlTelInput({
+            autoHideDialCode: true,
+            autoPlaceholder: "ON",
+            dropdownContainer: document.body,
+            formatOnDisplay: true,
+            initialCountry: "us",
+            placeholderNumberType: "MOBILE",
+            preferredCountries: ['us','gb','in'],
+            separateDialCode: true
+        });
+
+        $('#contactForm').on('submit', function (e) {
+            e.preventDefault(); // Prevent form submission
+
+            var selectedCountryData = $("#mobile").intlTelInput("getSelectedCountryData");
+            var dialCode = selectedCountryData.dialCode;
+            var phoneNumber = $('#mobile').val();
+
+            $.ajax({
+                url: 'http://localhost:3001/contact-us', // Replace with your server endpoint
+                method: 'POST',
+                data: {
+                    name: $('#name').val(),
+                    phone: dialCode + phoneNumber,
+                    email: $('#email').val(),
+                    query: $('#query').val()
+                },
+                success: function(response) {
+                    showToast('Form submitted successfully!', 'success');
+                    $('#contactForm')[0].reset();
+                },
+                
+            });
+        });
+
+        // Function to display Toastify notifications
+        function showToast(message, type) {
+            Toastify({
+                text: message,
+                duration: 4000,
+                close: true,
+                gravity: "top",
+                position: "right",
+                backgroundColor: type === 'error' ? "#f44336" : "#4CAF50",
+                stopOnFocus: true
+            }).showToast();
+        }
+    });
+</script>
+
+   
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/js/intlTelInput.min.js"></script>
+
+
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bad-words"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Email subscription functionality
+        const emailInput = document.getElementById('newsletterEmail');
+        const subscribeButton = document.getElementById('subscribeButton');
+    
+        subscribeButton.addEventListener('click', async (event) => {
+            event.preventDefault();
+            const email = emailInput.value.trim();
+    
+            if (!validateEmail(email)) {
+                showToast('Please enter a valid email address.', 'error');
+                return;
+            }
+    
+            try {
+                const response = await fetch('http://localhost:3001/subscribe', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email })
+                });
+    
+                if (response.ok) {
+                    showToast('Subscription successful!', 'success');
+                    emailInput.value = ''; // Reset email input
+                } else {
+                    const errorText = await response.text();
+                    showToast(`Subscription Error: ${errorText}`, 'error');
+                }
+            } catch (error) {
+                showToast(`Subscription Error: ${error.message}`, 'error');
+            }
+
+            function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(String(email).toLowerCase());
+        }
+        });
+    
+        // Contact form functionality
+        document.getElementById('contactForm').addEventListener('submit', async function(event) {
+            event.preventDefault();
+    
+            const recaptchaResponse = grecaptcha.getResponse();
+            if (!recaptchaResponse) {
+                showToast('Please complete the reCAPTCHA.', 'error');
+                return;
+            }
+    
+            const name = document.getElementById('name').value.trim();
+            const phone = document.getElementById('mobile').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const query = document.getElementById('query').value.trim();
+    
+            if (!isValidPhoneNumber(phone)) {
+                showToast('Please enter a valid phone number.', 'error');
+                return;
+            }
+    
+            if (name.length < 3) {
+                showToast('Name must be at least 3 characters long.', 'error');
+                return;
+            }
+    
+            if (/^\d+$/.test(name)) {
+                showToast('Name cannot be a number.', 'error');
+                return;
+            }
+    
+            if (!name || !email || !phone || !query) {
+                showToast('Please fill in all required fields.', 'error');
+                return;
+            }
+    
+            if (!validateEmail(email)) {
+                showToast('Please enter a valid email address.', 'error');
+                return;
+            }
+    
+            const selectedCountryData = $("#mobile").intlTelInput("getSelectedCountryData");
+            const dialCode = selectedCountryData.dialCode;
+    
+            if (phone.length > 15) {
+                showToast('Phone number cannot exceed 15 digits.', 'error');
+                return;
+            }
+    
+            const formattedPhone = dialCode + phone;
+    
+            try {
+                const response = await fetch('http://localhost:3001/contact-us', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        name: name,
+                        phone: formattedPhone,
+                        email: email,
+                        query: query,
+                        recaptchaToken: recaptchaResponse
+                    })
+                });
+    
+                if (response.ok) {
+                    const responseData = await response.json();
+                    showToast('Form submitted successfully!', 'success');
+                    document.getElementById('contactForm').reset();
+                    grecaptcha.reset();
+                } else {
+                    const responseData = await response.json();
+                    showToast(`Submission Error: ${responseData.error || 'Unknown error'}`, 'error');
+                }
+            } catch (error) {
+                showToast('Error submitting form: ' + error.message, 'error');
+            }
+        });
+    
+        function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(String(email).toLowerCase());
+        }
+    
+        function isValidPhoneNumber(phoneNumber) {
+            const phoneRegex = /^[0-9]{10,15}$/; 
+            return phoneRegex.test(phoneNumber);
+        }
+    
+        function showToast(message, type) {
+            Toastify({
+                text: message,
+                duration: 4000,
+                close: true,
+                gravity: "top",
+                position: "right",
+                backgroundColor: type === 'error' ? "#f44336" : "#4CAF50",
+                stopOnFocus: true
+            }).showToast();
+        }
+    });
+    </script>
+    
+    
+</body>
+</html>
