@@ -105,7 +105,7 @@ exports.getBlogs = async (req, res) => {
       data: blogs
     });
   } catch (error) {
-    console.error('Error', error);
+    console.error('Error', error)
     res.status(500).json({
       success: false,
       message: 'Server error',
