@@ -33,6 +33,9 @@ const subscribeTemplate = (email) => {
   return `
     <html>
     <body style="font-family: 'Helvetica Neue', Arial, sans-serif; color: #333; margin: 0; padding: 0; background-color: #f5f5f5;">
+    <div style="text-align: center;">
+             <img src="https://res.cloudinary.com/dvfmw4c9f/image/upload/v1722234617/logo_c_nv0icd.png" style="max-width: 150px; margin-bottom: 10px;" />
+        </div>
       <div style="max-width: 600px; margin: 0 auto; padding: 20px; background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px;">
         <h1 style="color: #007BFF; margin-top: 0;">Welcome to Our Newsletter!</h1>
         <p>Hi,</p>

@@ -1,8 +1,12 @@
 // src/Template/MailVerification.js
 
+
 const contactUsTemplate = (name, email, query, phone) => {
   return `
     <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: auto; border: 1px solid #ddd; padding: 20px; border-radius: 8px; background-color: #f9f9f9;">
+        <div style="text-align: center;">
+             <img src="https://res.cloudinary.com/dvfmw4c9f/image/upload/v1722234617/logo_c_nv0icd.png" style="max-width: 150px; margin-bottom: 10px;" />
+        </div>
         <h2 style="color: white; text-align: center; margin-bottom: 20px;">Contact Us Confirmation</h2>
         
         <p style="font-size: 16px;">Dear <strong>${name}</strong>,</p>

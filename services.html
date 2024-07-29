@@ -54,6 +54,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/css/intlTelInput.css">
 
 
+
+
 <style>
 .input-group > .intl-tel-input.allow-dropdown {
 -webkit-box-flex: 1;
@@ -93,6 +95,7 @@ overflow-x: hidden;
 }
 
 </style>
+
 
 </head>
 
@@ -192,7 +195,7 @@ overflow-x: hidden;
           <div class="row ">
 
 
-            <div class="col-xl-6 col-lg-6 col-md-6 ">
+            <div class="col-xl-6 col-lg-6 col-md-6 " id="App-development">
               <div class="services-one__single">
                 <div class="services-one__icon">
                   <img src="img/services-user.png" alt="img" class="img-fluid">
@@ -206,7 +209,7 @@ overflow-x: hidden;
             </div>
 
 
-            <div class="col-xl-6 col-lg-6 col-md-6 ">
+            <div class="col-xl-6 col-lg-6 col-md-6 " id="Web-development">
               <div class="services-one__single ">
                 <div class="services-one__icon">
                   <img src="img/services-2.png" alt="img" class="img-fluid">
@@ -220,20 +223,20 @@ overflow-x: hidden;
             </div>
 
 
-            <div class="col-xl-6 col-lg-6 col-md-6 ">
+            <div class="col-xl-6 col-lg-6 col-md-6 " id="UI/UX-Design">
               <div class="services-one__single pt-3">
                 <div class="services-one__icon">
                   <img src="img/services-3.png" alt="img" class="img-fluid">
 
                 </div>
-                <div class="services-one__content-box">
+                <div class="services-one__content-box" id="UI/UX Design">
                   <h3 class="services-one__title">UI/UX Design</h3>
                   <p class="services-one__text">Designing intuitive and engaging interfaces that enhance user satisfaction and drive engagement.</p>
                 </div>
               </div>
             </div>
 
-            <div class="col-xl-6 col-lg-6 col-md-6 ">
+            <div class="col-xl-6 col-lg-6 col-md-6" id="Software-Development">
               <div class="services-one__single pt-3">
                 <div class="services-one__icon">
                   <img src="img/services-4.png" alt="img" class="img-fluid">
@@ -247,13 +250,13 @@ overflow-x: hidden;
             </div>
 
 
-            <div class="col-xl-6 col-lg-6 col-md-6 ">
+            <div class="col-xl-6 col-lg-6 col-md-6 " id="Quality-Assurance">
               <div class="services-one__single pt-3">
                 <div class="services-one__icon">
                   <img src="img/services-5.png" alt="img" class="img-fluid">
 
                 </div>
-                <div class="services-one__content-box">
+                <div class="services-one__content-box" id="Quality-Assurance">
                   <h3 class="services-one__title">Quality Assurance</h3>
                   <p class="services-one__text">Ensuring your products meet the highest standards of quality and performance.</p>
                 </div>
@@ -267,7 +270,7 @@ overflow-x: hidden;
                   <img src="img/services-6.png" alt="img" class="img-fluid">
 
                 </div>
-                <div class="services-one__content-box">
+                <div class="services-one__content-box" id="IT-Consulting">
                   <h3 class="services-one__title">IT Consulting</h3>
                   <p class="services-one__text">Providing expert guidance to help you navigate the complexities of the IT landscape.</p>
                 </div>
@@ -284,7 +287,7 @@ overflow-x: hidden;
         </div>
 
         <div class="col-xl-5 col-lg-5 col-md-5 ">
-          <img src="img/person-working-html-computer 1.png" alt="img" class="img-fluid services__imgt">
+          <img src="img/person-working-html-computer 1.png" alt="img" class="img-fluid services__imgt" id="main-image">
 
         </div>
 
@@ -1049,6 +1052,30 @@ overflow-x: hidden;
 
 </body>
 
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    const mainImage = document.getElementById('main-image');
+console.log("main",mainImage)
+    // Mapping each service div ID to the corresponding image source
+    const imageMap = {
+      'App-development': 'img/app.png',
+      'Web-development': 'img/web.jpeg',
+      'UI/UX Design': 'img/ui.jpeg',
+      'Software-Development': 'img/software.jpeg',
+      'Quality-Assurance': 'img/qa.jpeg',
+      'It-consulting': 'img/it.png'
+    };
+
+    // Iterate through the keys (IDs) in the imageMap
+    Object.keys(imageMap).forEach((id) => {
+      const element = document.getElementById(id);
+      element.addEventListener('click', () => {
+        // Change the main image source to the corresponding image source
+        mainImage.src = imageMap[id];
+      });
+    });
+  });
+</script>
 
 
 

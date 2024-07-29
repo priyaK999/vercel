@@ -2,6 +2,9 @@ const serviceTemplate = (fullName, email, phone) => {
   return `
     <html>
     <body style="font-family: Arial, sans-serif; line-height: 1.6;">
+    <div style="text-align: center;">
+             <img src="https://res.cloudinary.com/dvfmw4c9f/image/upload/v1722234617/logo_c_nv0icd.png" style="max-width: 150px; margin-bottom: 10px;" />
+        </div>
       <div style="max-width: 600px; margin: 0 auto; padding: 20px;">
         <h1 style="color: #333;">Thank You, ${fullName}!</h1>
         <p style="color: #555;">We have received your contact information. Here are the details you provided:</p>

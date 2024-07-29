@@ -97,8 +97,8 @@ exports.uploadImage = async (req, res) => {
 
 exports.getBlogs = async (req, res) => {
   try {
-    // Fetch all blog posts from the database
-    const blogs = await Blog.find();
+    // Fetch the latest top 3 blog posts from the database
+    const blogs = await Blog.find().sort({ createdAt: -1 }).limit(3);
 
     res.status(200).json({
       success: true,
