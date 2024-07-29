@@ -102,7 +102,7 @@ exports.getBlogs = async (req, res) => {
 
     res.status(200).json({
       success: true,
-      data: blogs,
+      data: blogs
     });
   } catch (error) {
     console.error('Error', error);
