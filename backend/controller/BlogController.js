@@ -97,20 +97,27 @@ exports.uploadImage = async (req, res) => {
 
 exports.getBlogs = async (req, res) => {
   try {
-    // Fetch the latest top 3 blog posts from the database
-    const blogs = await Blog.find().sort({ createdAt: -1 }).limit(3);
+    // Fetch the latest two blog posts in ascending order (oldest first)
+    const latestTwoBlogs = await Blog.find().sort({ createdAt: 1 }).limit(2);
+
+    // Fetch the rest of the blog posts in descending order (newest first)
+    const restOfBlogs = await Blog.find().sort({ createdAt: -1 }).skip(2);
+
+    // Concatenate the two results
+    const allBlogs = latestTwoBlogs.concat(restOfBlogs);
 
     res.status(200).json({
       success: true,
-      data: blogs
+      data: allBlogs
     });
   } catch (error) {
-    console.error('Error', error)
+    console.error('Error:', error);
     res.status(500).json({
       success: false,
       message: 'Server error',
     });
   }
 };
+
 
 

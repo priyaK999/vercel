@@ -432,7 +432,7 @@ overflow-x: hidden;
             var phoneNumber = $('#mobile').val();
 
             $.ajax({
-                url: 'http://localhost:3001/contact-us', // Replace with your server endpoint
+                url: 'https://cc-5vhm.onrender.com/contact-us', // Replace with your server endpoint
                 method: 'POST',
                 data: {
                     name: $('#name').val(),
@@ -488,7 +488,7 @@ overflow-x: hidden;
             }
     
             try {
-                const response = await fetch('http://localhost:3001/subscribe', {
+                const response = await fetch('https://cc-5vhm.onrender.com/subscribe', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ email })
@@ -562,7 +562,7 @@ overflow-x: hidden;
             const formattedPhone = dialCode + phone;
     
             try {
-                const response = await fetch('http://localhost:3001/contact-us', {
+                const response = await fetch('https://cc-5vhm.onrender.com/contact-us', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({
@@ -587,6 +587,8 @@ overflow-x: hidden;
                 showToast('Error submitting form: ' + error.message, 'error');
             }
         });
+
+        console.log("first", document.getElementById('contactForm'))
     
         function validateEmail(email) {
             const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
